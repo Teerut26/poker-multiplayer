@@ -98,6 +98,7 @@ export default function useGame(input?: inputTypes): returnTypes {
     } as RoomTypes);
 
     await restartGame();
+    setCardRank(undefined);
   };
 
   const restartGame = async () => {
